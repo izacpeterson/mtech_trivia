@@ -47,4 +47,13 @@ footer {
   padding: 5px;
 }
 
+#answer {
+  display: flex;
+  flex-wrap: wrap;
+}
+#answer button {
+  width: 100%;
+  margin: 10px;
+}
+
 /*# sourceMappingURL=style.css.map */
