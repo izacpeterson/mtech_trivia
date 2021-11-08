@@ -8,6 +8,12 @@ async function fetchData(subURL, callback) {
 
 function dispCat(jsonData) {
   console.log(jsonData);
+  let catOpt = document.getElementById("selCat");
+  jsonData.trivia_categories.forEach((element) => {
+    catOpt.innerHTML += `<option value='${element.id}'>${element.name}</option>`;
+  });
 }
 
 fetchData("api_category.php", dispCat);
+
+export { fetchData, URL };

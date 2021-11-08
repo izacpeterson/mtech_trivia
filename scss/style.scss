@@ -1,0 +1,31 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost:wght@200;400&display=swap");
+
+$primary: #304173;
+$secondary: #a65d33;
+$text: #ffffff;
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Jost", sans-serif;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  label {
+    margin: 10px;
+  }
+}
+header {
+  background-color: $primary;
+  color: $text;
+  padding: 10px;
+}
+button {
+  background-color: $secondary;
+  color: $text;
+  border: none;
+  padding: 5px 15px;
+  font-size: 24px;
+}

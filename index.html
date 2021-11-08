@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./style.css" />
-    <script defer src="./app.js"></script>
+    <link rel="stylesheet" href="./css/style.css" />
+    <script type="module" defer src="./app.js"></script>
     <title>Trivia</title>
   </head>
   <body>
@@ -13,12 +13,28 @@
       <h1>Trivia</h1>
     </header>
     <main>
-      <form action="">
-        <select name="diff" id="selDifficulty">
-          <option value="easy">Easy</option>
-          <option value="medium">Medium</option>
-          <option value="hard">Hard</option>
-        </select>
+      <form action="/game/">
+        <label for="selDifficulty"
+          >Diffuculty:
+          <select name="diff" id="selDifficulty">
+            <option value="easy">Easy</option>
+            <option value="medium">Medium</option>
+            <option value="hard">Hard</option>
+          </select>
+        </label>
+        <label for="selType"
+          >Type:
+          <select name="type" id="selType">
+            <option value="boolean">True/False</option>
+            <option value="multiple">Multiple Choice</option>
+          </select>
+        </label>
+        <label for="selCat">
+          Category:
+          <select name="cat" id="selCat">
+            <option value=" ">any</option>
+          </select>
+        </label>
         <button type="submit">Start</button>
       </form>
     </main>
