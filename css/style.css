@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Jost:wght@200;400&display=swap");
+/* Color Theme Swatches in Hex */
 * {
   margin: 0;
   padding: 0;
@@ -15,17 +16,35 @@ form label {
 }
 
 header {
-  background-color: #304173;
-  color: #ffffff;
+  background-color: #34495e;
+  color: #fff;
   padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header i {
+  padding-right: 10px;
+  color: #f6c29a;
+}
+header h2 {
+  flex: 1;
 }
 
 button {
-  background-color: #a65d33;
-  color: #ffffff;
+  background-color: #715a68;
+  color: #fff;
   border: none;
   padding: 5px 15px;
   font-size: 24px;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  background-color: #f18985;
+  width: 100%;
+  padding: 5px;
 }
 
 /*# sourceMappingURL=style.css.map */
